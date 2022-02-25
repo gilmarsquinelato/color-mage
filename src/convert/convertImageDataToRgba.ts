@@ -1,9 +1,9 @@
 import { logError } from '../log'
 
 /**
- * RGB color representation
+ * RGBA color representation
  */
-export interface RgbColor {
+export interface RgbaColor {
   /**
    * Red channel (0-255)
    */
@@ -34,7 +34,7 @@ export interface RgbColor {
  * const colors = convertImageDataToRgba(imageData.data)
  *
  */
-const convertImageDataToRgba = (imageData: number[]): RgbColor[] => {
+const convertImageDataToRgba = (imageData: number[]): RgbaColor[] => {
   if (imageData.length % 4 !== 0) {
     logError('color mage: invalid imageData provided!')
     return []
