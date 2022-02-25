@@ -1,0 +1,12 @@
+{
+  "name": "color-mage",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "build": "tsc --outDir lib"
+  },
+  "dependencies": {
+    "typescript": "^4.5.5"
+  }
+}
