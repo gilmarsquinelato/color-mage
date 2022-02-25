@@ -1,26 +1,5 @@
 import { logError } from '../log'
-
-/**
- * RGBA color representation
- */
-export interface RgbaColor {
-  /**
-   * Red channel (0-255)
-   */
-  r: number
-  /**
-   * Green channel (0-255)
-   */
-  g: number
-  /**
-   * Blue channel (0-255)
-   */
-  b: number
-  /**
-   * Alpha channel (0-255)
-   */
-  a: number
-}
+import { RgbaColor } from '../types'
 
 /**
  * Converts the image data array into an RGB color array representation.
