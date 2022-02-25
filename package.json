@@ -5,7 +5,8 @@
   "license": "MIT",
   "scripts": {
     "build": "tsc --outDir lib",
-    "prepare": "husky install"
+    "prepare": "husky install",
+    "test": "jest"
   },
   "dependencies": {
     "typescript": "^4.5.5"
@@ -20,6 +21,7 @@
     "eslint-plugin-import": "^2.25.4",
     "eslint-plugin-node": "^11.1.0",
     "eslint-plugin-promise": "^5.2.0",
-    "husky": "^7.0.4"
+    "husky": "^7.0.4",
+    "jest": "^27.5.1"
   }
 }
