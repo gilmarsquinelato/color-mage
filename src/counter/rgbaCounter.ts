@@ -1,12 +1,12 @@
 import { RgbaColor, RgbaCounter } from '../types'
 
 /**
- * Counts the number of occurrences of each color
+ * Counts the number of occurrences of each color.
  *
- * @param colors the colors that will be counted
- * @param withAlpha whether consider or not the alpha channel while counting
+ * @param colors the colors that will be counted.
+ * @param withAlpha whether consider or not the alpha channel while counting (default false).
  */
-const rgbaCounter = (colors: RgbaColor[], withAlpha = true): RgbaCounter[] => {
+const rgbaCounter = (colors: RgbaColor[], withAlpha = false): RgbaCounter[] => {
   const colorIndex = colors.reduce((acc, curr) => {
     const key = getColorKey(curr, withAlpha)
     acc[key] ??= { color: curr, count: 0 }

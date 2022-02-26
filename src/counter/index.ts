@@ -1,1 +1,1 @@
-export { default as rgbCounter } from './rgbCounter'
+export { default as rgbaCounter } from './rgbaCounter'

@@ -10,7 +10,7 @@ describe('counter/rgbaCounter', () => {
       { r: 0, g: 0, b: 0, a: 128 }
     ]
 
-    const count = rgbaCounter(colors)
+    const count = rgbaCounter(colors, true)
 
     expect(count).toEqual([
       { color: { r: 0, g: 0, b: 0, a: 0 }, count: 2 },
