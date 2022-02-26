@@ -11,9 +11,8 @@ import { RgbaColor } from '../types'
  * const imageData = ctx.getImageData(0, 0, 640, 480)
  *
  * const colors = convertImageDataToRgba(imageData.data)
- *
  */
-const convertImageDataToRgba = (imageData: number[]): RgbaColor[] => {
+const convertImageDataToRgba = (imageData: Uint8ClampedArray | number[]): RgbaColor[] => {
   if (imageData.length % 4 !== 0) {
     logError('color mage: invalid imageData provided!')
     return []
