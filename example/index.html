@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+      #palette {
+          display: flex;
+      }
+
+      .color {
+          width: 64px;
+          height: 64px;
+          border-radius: 2px;
+          margin: 4px;
+      }
+
+      #preview {
+          position: relative;
+          display: inline-block;
+          margin: 24px;
+      }
+  </style>
+</head>
+<body>
+<label>
+  Upload image
+  <input type="file" id="fileUpload" />
+</label>
+
+<div id="palette"></div>
+
+<div id="preview">
+  <canvas id="canvas"></canvas>
+</div>
+
+<script type="module" src="./index.js"></script>
+</body>
+</html>

@@ -4,3 +4,7 @@
 lib
 node_modules
 coverage
+
+# Parcel CLI output
+dist
+.parcel-cache
