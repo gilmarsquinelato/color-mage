@@ -1,10 +1,21 @@
 # Color mage
 
+---
+
+![GitHub Workflow Status (branch)](https://img.shields.io/github/workflow/status/gilmarsquinelato/color-mage/Release/main)
+![GitHub](https://img.shields.io/github/license/gilmarsquinelato/color-mage)
+![npm](https://img.shields.io/npm/v/color-mage)
+![npm](https://img.shields.io/npm/dm/color-mage)
+![npm bundle size](https://img.shields.io/bundlephobia/min/color-mage)
+
+---
 A dependency-free image color extraction library.
 
 The extraction consists of using K-Means algorithm.
 
 It has a few utility functions as well!
+
+**NOTE:** This library compiles to Ecmascript modules target. 
 
 ## Example
 
