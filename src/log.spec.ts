@@ -6,7 +6,7 @@ const isProductionMock = isProduction as jest.MockedFunction<typeof isProduction
 
 describe('log', () => {
   it('should log error when not in production', () => {
-    const consoleError = jest.spyOn(console, 'error')
+    const consoleError = jest.spyOn(console, 'error').mockImplementation()
 
     logError('ok')
 
@@ -15,7 +15,7 @@ describe('log', () => {
   })
 
   it('should not log error when in production', () => {
-    const consoleError = jest.spyOn(console, 'error')
+    const consoleError = jest.spyOn(console, 'error').mockImplementation()
     isProductionMock.mockReturnValue(true)
 
     logError('ok')
