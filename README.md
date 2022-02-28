@@ -1,7 +1,9 @@
 # Color mage
 
 A dependency-free image color extraction library.
+
 The extraction consists of using K-Means algorithm.
+
 It has a few utility functions as well!
 
 ## Example
@@ -11,7 +13,7 @@ It has a few utility functions as well!
 ## Functions
 
 * Color extractors
-* * [kMeansColorExtractor](./src/extractors/kMeansColorExtractor.ts): Function that extracts colors from a given array of pixels.
+* * [kMeansColorExtractor](./src/extractors/kMeansColorExtractor.ts): Function that extracts colors from a given array of pixels using K-Means algorithm.
 * Converters
 * * [convertImageDataToRgba](./src/convert/convertImageDataToRgba.ts): Function that converts raw imageData.data array into an array of [RGBA](./src/types.ts) objects.
 * * [convertRgbToHex](./src/convert/convertRgbToHex.ts): Converts an RGB color into it hexadecimal representation.
