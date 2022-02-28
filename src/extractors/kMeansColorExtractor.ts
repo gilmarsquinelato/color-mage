@@ -49,7 +49,7 @@ const defaultOptions: KMeansColorExtractorOptions = {
  * @param count the number of colors to be extracted
  * @param options additional options {@see KMeansColorExtractorOptions} for more details
  */
-const KMeansColorExtractor = (
+const kMeansColorExtractor = (
   colors: RgbaColor[],
   count: number,
   options?: Partial<KMeansColorExtractorOptions>
@@ -69,7 +69,7 @@ const KMeansColorExtractor = (
   return foundColors.map((color) => getNearestColor(uniqueColors, color, withAlpha))
 }
 
-export default KMeansColorExtractor
+export default kMeansColorExtractor
 
 const runKMeans = (colors: RgbaColor[], count: number, options: KMeansColorExtractorOptions) => {
   const { maxRuns, withAlpha, randomSeed } = options
