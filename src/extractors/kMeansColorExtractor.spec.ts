@@ -1,5 +1,5 @@
 import { RgbaColor } from '../types'
-import { kMeansColorExtractor } from './index'
+import kMeansColorExtractor from './kMeansColorExtractor'
 
 describe('kMeansColorExtractor', () => {
   it('should return all colors when it has less than count', () => {
