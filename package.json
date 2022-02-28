@@ -1,8 +1,11 @@
 {
   "name": "color-mage",
   "version": "1.0.0",
-  "main": "index.js",
   "license": "MIT",
+  "main": "lib/isndex.js",
+  "files": [
+    "lib"
+  ],
   "scripts": {
     "start": "parcel example/index.html",
     "build": "tsc --outDir lib",
