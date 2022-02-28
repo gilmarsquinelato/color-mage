@@ -2,6 +2,16 @@
   "name": "color-mage",
   "version": "1.0.0",
   "license": "MIT",
+  "description": "A dependency-free image color extraction library.",
+  "homepage": "https://github.com/gilmarsquinelato/color-mage#readme",
+  "author": {
+    "name": "Gilmar Quinelato",
+    "email": "gilmarsquinelato@gmail.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/gilmarsquinelato/color-mage"
+  },
   "main": "lib/isndex.js",
   "files": [
     "lib"
@@ -10,7 +20,8 @@
     "start": "parcel example/index.html",
     "build": "tsc --outDir lib",
     "prepare": "husky install",
-    "test": "jest"
+    "test": "jest",
+    "lint": "eslint src --ext .ts --max-warnings 0"
   },
   "dependencies": {
     "typescript": "^4.5.5"
