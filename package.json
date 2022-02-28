@@ -12,7 +12,8 @@
     "type": "git",
     "url": "https://github.com/gilmarsquinelato/color-mage"
   },
-  "main": "lib/isndex.js",
+  "main": "lib/index.js",
+  "types": "lib/index.d.ts",
   "files": [
     "lib"
   ],
