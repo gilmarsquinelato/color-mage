@@ -4,6 +4,10 @@ A dependency-free image color extraction library.
 The extraction consists of using K-Means algorithm.
 It has a few utility functions as well!
 
+## Example
+
+![](example/screenshot.png)
+
 ## Functions
 
 * Color extractors
