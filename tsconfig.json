@@ -1,7 +1,8 @@
 {
   "compilerOptions": {
-    "target": "es2016",
-    "module": "ESNext",
+    "target": "es2015",
+    "module": "ES2015",
+    "outDir": "./lib/esm",
     "moduleResolution": "Node",
     "esModuleInterop": true,
     "forceConsistentCasingInFileNames": true,

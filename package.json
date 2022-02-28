@@ -13,8 +13,9 @@
     "url": "https://github.com/gilmarsquinelato/color-mage"
   },
   "type": "module",
-  "main": "lib/index.js",
-  "types": "lib/index.d.ts",
+  "main": "lib/cjs/index.js",
+  "module": "lib/esm/index.js",
+  "types": "lib/esm/index.d.ts",
   "files": [
     "lib"
   ],
@@ -25,7 +26,7 @@
   },
   "scripts": {
     "start": "parcel example/index.html",
-    "build": "tsc --outDir lib",
+    "build": "tsc -p tsconfig.json && tsc -p tsconfig.cjs.json",
     "prepare": "husky install",
     "test": "jest",
     "lint": "eslint src --ext .ts --max-warnings 0",
