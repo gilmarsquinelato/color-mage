@@ -154,16 +154,19 @@ const recomputeCentroids = (colors: RgbaColor[], clustering: number[], count: nu
 }
 
 const getNearestColorIndex = (colors: RgbaColor[], color: RgbaColor, withAlpha: boolean): number => {
-  const { index } = colors
-    .reduce(
-      (acc, item, index) => {
-        const distance = getColorDistance(color, item, withAlpha)
-        return distance < acc.distance
-          ? { index, distance }
-          : { ...acc }
-      },
-      { index: Infinity, distance: Infinity }
-    )
+  let distance = 0
+  let index = -1
+
+  for (let i = 0; i < colors.length; i++) {
+    const item = colors[i]
+    const itemDistance = getColorDistance(color, item, withAlpha)
+
+    if (index === -1 || itemDistance < distance) {
+      index = i
+      distance = itemDistance
+    }
+  }
+
   return index
 }
 
