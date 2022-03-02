@@ -160,7 +160,7 @@ const getNearestColorIndex = (colors: RgbaColor[], color: RgbaColor, withAlpha: 
         const distance = getColorDistance(color, item, withAlpha)
         return distance < acc.distance
           ? { index, distance }
-          : acc
+          : { ...acc }
       },
       { index: Infinity, distance: Infinity }
     )
